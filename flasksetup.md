@@ -69,6 +69,12 @@ application = Flask(__name__)
 @application.route('/')
 def index():
     return 'Hello Passenger : ' + str(datetime.datetime.now().time())
+
+# Endpoint to check python version	
+@application.route('/pyversion')
+def pyversion():
+	version = str(sys.version_info)
+	return version
 ```
 
 
