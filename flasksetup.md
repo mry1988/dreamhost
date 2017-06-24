@@ -35,3 +35,38 @@ cd $HOME/.python3.5.1/bin
 cd $HOME/venv
 source bin/activate
 ```
+
+## Step 3. Install Flask
+
+```
+easy_install flask
+```
+
+
+## Step 4. Setup Pessenger
+
+make sure you have pessenger enabled in your dreamhost hosting
+
+Go to your domain/sub domain -> edit -> and check the Passenger checkbox
+
+now Create a file passenger_wsgi.py with following 
+
+```
+import sys, os
+INTERP = os.path.join(os.environ['HOME'], 'venv', 'bin', 'python')
+if sys.executable != INTERP:
+    os.execl(INTERP, INTERP, *sys.argv)
+sys.path.append(os.getcwd())
+import datetime
+
+from flask import Flask
+application = Flask(__name__)
+
+
+
+@application.route('/')
+def index():
+    return 'Hello Passenger : ' + str(datetime.datetime.now().time())
+```
+
+
