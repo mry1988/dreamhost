@@ -53,7 +53,7 @@ Go to your domain/sub domain -> edit -> and check the Passenger checkbox
 ![Pessenger](images/pessenger_enable.JPG)
 
 #### 4.2 Create passenger_wsgi.py
-Now Create a file passenger_wsgi.py with following 
+Now Create a file passenger_wsgi.py in your domain or sub-domain's root folder with following 
 
 ```
 import sys, os
