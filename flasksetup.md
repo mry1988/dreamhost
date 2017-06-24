@@ -92,8 +92,3 @@ run 'touch temp/restart.txt' again to restart you application
 
 now you should be able to acces your flask application using your domain/subdomain address
 
-
-References:
-http://www.mixtmeta.com/blog/python-on-dreamhost-part-1
-
-
