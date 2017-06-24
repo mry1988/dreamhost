@@ -1,2 +1,2 @@
-#Setting up flask on Dreamhost with Python 3.5
+# Setting up flask on Dreamhost with Python 3.5
 
