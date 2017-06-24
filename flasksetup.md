@@ -1,2 +1,37 @@
 # Setting up flask on Dreamhost with Python 3.5
 
+## Step 1. Connect to your host with ssh
+
+you can use winscp, putty to connect to your host. Make sure user account you are using has ssh access. Otherwise after login putty will automatically close.
+
+## Step 2. Download and install Python
+
+I have used python 3.5.1 for this. It should work with any version
+
+#### 2.1 Create a directory to download python in (Optional)
+
+```
+mkdir python
+cd python
+````
+
+#### 2.2 Install Python
+
+```
+wget https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz
+tar xvfJ Python-3.5.1.tar.xz
+cd Python-3.5.1
+./configure --prefix=$HOME/Python35
+make
+make install
+```
+
+#### 2.3 Create and Activate Virtual Environment
+
+```
+cd $HOME/.python3.5.1/bin
+./pip3.5 install virtualenv
+./virtualenv -p $HOME/.python3.5.1/bin/python3.5 $HOME/venv
+cd $HOME/venv
+source bin/activate
+```
