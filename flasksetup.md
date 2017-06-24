@@ -45,11 +45,13 @@ easy_install flask
 
 ## Step 4. Setup Pessenger
 
+#### 4.1 Enable Pessenger
 make sure you have pessenger enabled in your dreamhost hosting
 
 Go to your domain/sub domain -> edit -> and check the Passenger checkbox
 
-now Create a file passenger_wsgi.py with following 
+#### 4.2 Create passenger_wsgi.py
+Now Create a file passenger_wsgi.py with following 
 
 ```
 import sys, os
