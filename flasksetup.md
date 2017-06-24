@@ -50,7 +50,7 @@ make sure you have pessenger enabled in your dreamhost hosting
 
 Go to your domain/sub domain -> edit -> and check the Passenger checkbox
 
-![Pessenger]("images/pessenger_enable.JPG")
+![Pessenger](images/pessenger_enable.JPG)
 
 #### 4.2 Create passenger_wsgi.py
 Now Create a file passenger_wsgi.py with following 
