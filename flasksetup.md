@@ -72,3 +72,16 @@ def index():
 ```
 
 
+## Setup the server
+
+Add a folder called temp with file restart.txt
+```
+mkdir temp
+touch temp/restart.txt
+```
+
+run 'touch temp/restart.txt' again to restart you application
+
+now you should be able to acces your flask application using your domain/subdomain address
+
+
